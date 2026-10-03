@@ -1,0 +1,13 @@
+{
+  "lora_f1_improvement": 0.0805,
+  "lora_f1_relative_gain_pct": 10.41,
+  "qlora_f1_improvement": 0.0742,
+  "qlora_f1_relative_gain_pct": 9.6,
+  "qlora_vs_lora_f1_diff": -0.0063,
+  "qlora_memory_reduction_pct": 77.66,
+  "vram_saved_gb": 8.99,
+  "trainable_percentage": 0.2383,
+  "parameter_reduction_vs_full_pct": 99.7617,
+  "lora_adapter_size_mb": 39.06,
+  "qlora_adapter_size_mb": 39.06
+}

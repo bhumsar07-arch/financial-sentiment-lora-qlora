@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Model Checkpoints & Adapters (Large weights)
+adapters/*
+!adapters/.gitkeep
+!adapters/lora/.gitkeep
+!adapters/qlora/.gitkeep
+checkpoints/
+runs/
+wandb/
+
+# Results data & figures (keep folder structure)
+results/logs/*
+!results/logs/.gitkeep
+results/predictions/*
+!results/predictions/.gitkeep
+results/metrics/*
+!results/metrics/.gitkeep
+results/figures/*
+!results/figures/.gitkeep
+
+# HuggingFace & Torch Cache
+.cache/
+hf_cache/
+
+# OS generated
+.DS_Store
+Thumbs.db
+desktop.ini

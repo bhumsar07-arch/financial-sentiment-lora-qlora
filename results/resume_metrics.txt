@@ -1,0 +1,10 @@
+=================================================================
+      QUANTITATIVE HIGHLIGHTS FOR RESUME & INTERVIEWS       
+=================================================================
+
+- Fine-tuned Qwen2.5-3B using LoRA for 3-class financial sentiment, improving Macro-F1 by +0.0805 (+10.41% relative) over zero-shot baseline.
+- Evaluated 4-bit QLoRA (NF4 + double quantization), maintaining within 0.0063 Macro-F1 of full 16-bit LoRA.
+- Reduced peak GPU training VRAM by 77.66% (8.99 GB saved) using QLoRA vs standard 16-bit LoRA.
+- Trained only 0.2383% of model parameters (99.7617% parameter reduction vs full fine-tuning), enabling compact adapter checkpointing (~39.06 MB).
+
+=================================================================

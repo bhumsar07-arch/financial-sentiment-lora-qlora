@@ -1,0 +1,34 @@
+# LoRA Configuration
+# Low-Rank Adaptation of Large Language Models (Hu et al., 2021)
+
+method: "lora"
+
+peft_config:
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  bias: "none"
+  task_type: "CAUSAL_LM"
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+  # All linear projection modules (optional extended experiment)
+  extended_target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+model_loading:
+  quantization: false
+  torch_dtype: "auto" # Will resolve to bfloat16 or float16 based on hardware
+  low_cpu_mem_usage: true
+
+adapter_output_dir: "adapters/lora"
+metrics_output_file: "results/metrics/lora.json"
+predictions_output_file: "results/predictions/lora.csv"

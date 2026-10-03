@@ -1,0 +1,40 @@
+# QLoRA Configuration
+# Efficient Finetuning of Quantized LLMs (Dettmers et al., 2023)
+
+method: "qlora"
+
+# Same LoRA hyperparameters as lora.yaml for strict scientific fairness
+peft_config:
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  bias: "none"
+  task_type: "CAUSAL_LM"
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+  extended_target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+# 4-bit Quantization settings using bitsandbytes
+quantization:
+  load_in_4bit: true
+  bnb_4bit_quant_type: "nf4"          # NormalFloat 4
+  bnb_4bit_use_double_quant: true      # Nested quantization
+  bnb_4bit_compute_dtype: "auto"       # Resolved to bfloat16 or float16
+
+model_loading:
+  quantization: true
+  low_cpu_mem_usage: true
+
+adapter_output_dir: "adapters/qlora"
+metrics_output_file: "results/metrics/qlora.json"
+predictions_output_file: "results/predictions/qlora.csv"
