@@ -1,0 +1,81 @@
+{
+  "accuracy": 0.7785,
+  "macro_precision": 0.7892,
+  "macro_recall": 0.782,
+  "macro_f1": 0.7733,
+  "weighted_f1": 0.7797,
+  "invalid_output_rate": 2.2,
+  "invalid_count": 16,
+  "total_samples": 727,
+  "per_class": {
+    "negative": {
+      "precision": 0.7544,
+      "recall": 0.9451,
+      "f1": 0.839,
+      "support": 91
+    },
+    "neutral": {
+      "precision": 0.8017,
+      "recall": 0.8519,
+      "f1": 0.826,
+      "support": 432
+    },
+    "positive": {
+      "precision": 0.8116,
+      "recall": 0.549,
+      "f1": 0.655,
+      "support": 204
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "counts": {
+      "negative": {
+        "negative": 86,
+        "neutral": 5,
+        "positive": 0,
+        "invalid": 0
+      },
+      "neutral": {
+        "negative": 22,
+        "neutral": 368,
+        "positive": 26,
+        "invalid": 16
+      },
+      "positive": {
+        "negative": 6,
+        "neutral": 86,
+        "positive": 112,
+        "invalid": 0
+      }
+    },
+    "matrix_2d": [
+      [
+        86,
+        5,
+        0
+      ],
+      [
+        22,
+        368,
+        26
+      ],
+      [
+        6,
+        86,
+        112
+      ]
+    ]
+  },
+  "method": "zero_shot",
+  "model_name": "Qwen/Qwen2.5-3B-Instruct",
+  "latency_avg_ms": 625.37,
+  "latency_median_ms": 663.61,
+  "latency_p95_ms": 793.32,
+  "throughput_samples_per_sec": 1.6,
+  "peak_memory_gb": 5.775
+}

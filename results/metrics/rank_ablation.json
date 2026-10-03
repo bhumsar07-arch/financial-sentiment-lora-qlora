@@ -1,0 +1,54 @@
+[
+  {
+    "rank": 4,
+    "alpha": 8,
+    "accuracy": 0.8391,
+    "macro_f1": 0.831,
+    "weighted_f1": 0.8371,
+    "trainable_parameters": 1843200,
+    "trainable_parameters_millions": 1.8432,
+    "trainable_percentage": 0.1084,
+    "peak_vram_gb": 2.525,
+    "training_time_seconds": 6.21,
+    "adapter_size_mb": 7.07
+  },
+  {
+    "rank": 8,
+    "alpha": 16,
+    "accuracy": 0.8446,
+    "macro_f1": 0.8335,
+    "weighted_f1": 0.8426,
+    "trainable_parameters": 3686400,
+    "trainable_parameters_millions": 3.6864,
+    "trainable_percentage": 0.2165,
+    "peak_vram_gb": 2.555,
+    "training_time_seconds": 6.46,
+    "adapter_size_mb": 14.1
+  },
+  {
+    "rank": 16,
+    "alpha": 32,
+    "accuracy": 0.8528,
+    "macro_f1": 0.8447,
+    "weighted_f1": 0.8511,
+    "trainable_parameters": 7372800,
+    "trainable_parameters_millions": 7.3728,
+    "trainable_percentage": 0.4322,
+    "peak_vram_gb": 2.596,
+    "training_time_seconds": 8.37,
+    "adapter_size_mb": 28.17
+  },
+  {
+    "rank": 32,
+    "alpha": 64,
+    "accuracy": 0.8501,
+    "macro_f1": 0.8429,
+    "weighted_f1": 0.8482,
+    "trainable_parameters": 14745600,
+    "trainable_parameters_millions": 14.7456,
+    "trainable_percentage": 0.8606,
+    "peak_vram_gb": 3.8,
+    "training_time_seconds": 7676.15,
+    "adapter_size_mb": 56.29
+  }
+]

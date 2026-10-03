@@ -1,0 +1,54 @@
+{
+  "dataset_name": "takala/financial_phrasebank",
+  "dataset_config": "sentences_50agree",
+  "random_seed": 42,
+  "split_ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "train": {
+    "total_samples": 3392,
+    "class_counts": {
+      "neutral": 2015,
+      "positive": 954,
+      "negative": 423
+    },
+    "class_percentages": {
+      "neutral": 59.4,
+      "positive": 28.12,
+      "negative": 12.47
+    }
+  },
+  "validation": {
+    "total_samples": 727,
+    "class_counts": {
+      "neutral": 432,
+      "positive": 205,
+      "negative": 90
+    },
+    "class_percentages": {
+      "neutral": 59.42,
+      "positive": 28.2,
+      "negative": 12.38
+    }
+  },
+  "test": {
+    "total_samples": 727,
+    "class_counts": {
+      "neutral": 432,
+      "positive": 204,
+      "negative": 91
+    },
+    "class_percentages": {
+      "neutral": 59.42,
+      "positive": 28.06,
+      "negative": 12.52
+    }
+  },
+  "data_leakage_check": {
+    "train_val_overlap": 3,
+    "train_test_overlap": 2,
+    "val_test_overlap": 0
+  }
+}

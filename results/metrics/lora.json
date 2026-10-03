@@ -1,0 +1,83 @@
+{
+  "accuracy": 0.8583,
+  "macro_precision": 0.8412,
+  "macro_recall": 0.8702,
+  "macro_f1": 0.8538,
+  "weighted_f1": 0.8578,
+  "invalid_output_rate": 0.0,
+  "invalid_count": 0,
+  "total_samples": 727,
+  "per_class": {
+    "negative": {
+      "precision": 0.8208,
+      "recall": 0.956,
+      "f1": 0.8832,
+      "support": 91
+    },
+    "neutral": {
+      "precision": 0.8873,
+      "recall": 0.875,
+      "f1": 0.8811,
+      "support": 432
+    },
+    "positive": {
+      "precision": 0.8154,
+      "recall": 0.7794,
+      "f1": 0.797,
+      "support": 204
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "counts": {
+      "negative": {
+        "negative": 87,
+        "neutral": 4,
+        "positive": 0,
+        "invalid": 0
+      },
+      "neutral": {
+        "negative": 18,
+        "neutral": 378,
+        "positive": 36,
+        "invalid": 0
+      },
+      "positive": {
+        "negative": 1,
+        "neutral": 44,
+        "positive": 159,
+        "invalid": 0
+      }
+    },
+    "matrix_2d": [
+      [
+        87,
+        4,
+        0
+      ],
+      [
+        18,
+        378,
+        36
+      ],
+      [
+        1,
+        44,
+        159
+      ]
+    ]
+  },
+  "method": "lora",
+  "model_name": "Qwen/Qwen2.5-3B-Instruct",
+  "trainable_parameters": 7372800,
+  "trainable_percentage": 0.2383,
+  "training_time_seconds": 10800,
+  "training_time_str": "~3.0 hrs*",
+  "training_time_note": "Training duration for the 3-epoch final models was recorded from a checkpoint restoration pass. True un-cached training throughput is measured at ~9.05 s/step (~2.1 hours for 848 steps on r=32, ~3.0 hours for 1,272 steps on full LoRA).",
+  "peak_vram_gb": 11.58,
+  "latency_median_ms": 438.75
+}

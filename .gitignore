@@ -22,15 +22,18 @@ checkpoints/
 runs/
 wandb/
 
-# Results data & figures (keep folder structure)
+# Results data & figures (keep metrics and figures for repository showcase, ignore heavy predictions and logs)
 results/logs/*
 !results/logs/.gitkeep
 results/predictions/*
 !results/predictions/.gitkeep
 results/metrics/*
 !results/metrics/.gitkeep
+!results/metrics/*.json
+!results/metrics/*.csv
 results/figures/*
 !results/figures/.gitkeep
+!results/figures/*.png
 
 # HuggingFace & Torch Cache
 .cache/

@@ -1,7 +1,7 @@
-# Model Configuration
+# Dedicated Model Configuration
 # Efficient Financial Sentiment Fine-Tuning with LoRA and QLoRA
 
-# Dedicated base model for the research project
+# Dedicated base model for the research project (No fallbacks permitted)
 default_model: "Qwen/Qwen2.5-3B-Instruct"
 
 models:
@@ -14,6 +14,7 @@ models:
       qlora_4bit: 6.5
     recommended_hardware: "Google Colab T4 GPU (15GB VRAM) / Kaggle T4 or P100"
     notes: >
-      Primary research model (3.09B parameters).
-      Fits cleanly into standard cloud GPUs across all experiments:
+      Sole, dedicated research model (3.09B parameters) evaluated across all experiments.
+      Fits into standard cloud GPU environments across all experiments:
       Zero-Shot (~8GB VRAM), 16-bit LoRA (~13GB VRAM), and 4-bit QLoRA (~6.5GB VRAM).
+      No fallbacks are used to guarantee internal validity and experimental reproducibility.

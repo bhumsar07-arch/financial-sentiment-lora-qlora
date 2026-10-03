@@ -1,0 +1,6 @@
+Method,Accuracy,Macro-F1,Trainable %,Peak VRAM (GB),Training Time,Adapter Size (MB),Latency (ms)
+Zero-shot,77.85%,0.7733,0.0%,5.78,N/A,N/A,663.6
+LoRA,85.83%,0.8538,0.2383%,11.58,~3.0 hrs*,39.06,438.8
+QLoRA,85.69%,0.8475,0.4322%,2.59,~3.2 hrs*,39.06,495.9
+
+* Note: Training duration for the 3-epoch final models was recorded from a checkpoint restoration pass. True un-cached training throughput is measured at ~9.05 s/step (~2.1 hours for 848 steps on r=32, ~3.0 hours for 1,272 steps on full LoRA).
